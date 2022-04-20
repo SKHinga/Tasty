@@ -67,6 +67,7 @@
 }
 .mode {
   margin-top: 7px;
+  margin-right: 10px;
   color: var(--secondary-color);
   font-size: 20px;
   cursor: pointer;
@@ -87,13 +88,13 @@
   background-color: var(--secondary-color);
 }
 .search {
-  height: 80vh;
+  height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .search-bar {
-  width: 60%;
+  width: 80%;
   margin: auto;
   max-width: 700px;
   background: var(--search-color);
@@ -112,6 +113,9 @@
   color: var(--secondary-color);
   outline: none;
 }
+.search-bar button ion-icon{
+  color: var(--secondary-color);
+}
 .search-bar button{
   border: 0;
   border-radius: 50%;
@@ -122,7 +126,6 @@
 ::placeholder {
   color: var(--secondary-color);
 }
-
 
 
 
@@ -159,12 +162,13 @@
   width: 100%;
   text-align: center;
   transition: 0.3s;
+  z-index: 1;
  }
  .bar li {
   margin: 25px 0;
 }
 .bar.active {
-  left: -10%;
+  left: 0;
 }
 .mode {
   font-size: 24px;
