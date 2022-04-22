@@ -192,15 +192,72 @@ body {
   color: var(--accent-color);
   font-weight: 700;
 }
-.ex {
-  display: flex;
-  justify-content: flex-end;
+.btn:focus {
+  outline: none;
+  box-shadow: none !important;
 }
-
-
-
-
-
+.about, .contact {
+  width: 70%;
+  margin: auto;
+}
+.about p {
+  text-align: justify;
+}
+.about h2 {
+  color: var(--accent-color);
+}
+.contact h2{
+  color: var(--secondary-color);
+}
+.name {
+  width: 100%;
+  padding: 5px 7px;
+  border: 1px solid var(--accent-color);
+  border-radius: 10px;
+  background: transparent;
+  outline: none;
+  margin-top: 10px;
+}
+.mail {
+  margin: 15px 0;
+  width: 100%;
+  padding: 5px 7px;
+  border: 1px solid var(--accent-color);
+  border-radius: 10px;
+  background: transparent;
+  outline: none;
+}
+textarea {
+  border: 1px solid var(--accent-color);
+  border-radius: 10px;
+  background: transparent;
+  padding: 5px 7px;
+  width: 100%;
+  outline: none;
+}
+.messagebtn {
+  border: 1px solid var(--accent-color);
+  padding: 3px 12px;
+  border-radius: 10px;
+  transition: .3s ease;
+  float: right;
+}
+.messagebtn:hover {
+  background-color: var(--accent-color);
+  font-size: 15px;
+}
+.iconic ul{
+  display: flex;
+}
+.iconic li a {
+  color: var(--secondary-color);
+}
+.foot {
+  justify-content: space-between;
+}
+footer h4 {
+  font-size: 20px;
+}
 
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -237,5 +294,19 @@ body {
 }
 .mode {
   font-size: 24px;
+}
+.top {
+  backdrop-filter: none;
+  background-color: var(--primary-color);
+}
+.about, .contact {
+  width: 90%;
+  margin: auto;
+}
+.foot {
+  text-align: center;
+}
+.iconic ul{
+  margin-left: 23%;
 }
 }

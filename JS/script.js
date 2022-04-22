@@ -65,6 +65,8 @@ function getMealList (e){
 
 let details = document.querySelector('.details');
 details.innerHTML = '';
+const about = document.querySelector('.about');
+const contact = document.querySelector('.contact');
 
 function mealRecipeModal(meal){
   meal = meal[0];
@@ -83,11 +85,20 @@ function mealRecipeModal(meal){
   </div>
   `
   mealResults.style = 'display: none;'
+  about.style = 'display: none;'
+  contact.style = 'display: none;'
 
   let closeBtn = document.getElementById('close-btn')
   closeBtn.addEventListener('click', () =>{
     mealResults.style = 'display: flex;'
+    about.style = 'display: block;'
+    contact.style = 'display: block;'
     details.style = 'display:none;';
     details.innerHTML = '';
   })
 };
+
+const message = document.getElementById('message');
+message.addEventListener('click', ()=>{
+  alert ('Thank you for your message. We\'ll be sure to get back to you!');
+})
