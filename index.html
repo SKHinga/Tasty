@@ -12,14 +12,14 @@
   <link rel="icon" href="Assets/honza.png">
 </head>
 <body>
-  <section class="bg-img">
+  <section class="bg-img" id="Home">
     <div class="container-fluid">
       <nav class="top">
         <h1 class="tasty">T<span class="taste">as</span>ty</h1>
         <ul class="bar">
-          <li><a href="#">Home</a></li>
+          <li><a href="#Home">Home</a></li>
           <li><a href="#">About</a></li>
-          <li><a href="#">Search</a></li>
+          <li><a href="#Search">Search</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
         <ion-icon name="moon-outline" class="mode" id="mode"></ion-icon>
@@ -30,17 +30,31 @@
         </div>
       </nav>
     </div>
-    <div class="container search">
-      <form action="" class="search-bar">
-        <input type="text" name="ingredient" placeholder="Enter Ingredient" id="">
-        <button type="submit"><ion-icon name="search-outline"></ion-icon></button>
-      </form>
+    <div class="container">
+      <div class="search" id="Search">
+        <h2 class="mt-2 torn">Live, love, <span class="eat">eat</span>.</h2>
+        <p class="mt-4">With Tasty, life is infinitely delicious!</p>
+        <p class="fs-4 text-center">Type below with an ingredient you're unsure how to pair.</p>
+        <div class="search-bar">
+          <input type="text" placeholder="Enter Ingredient" id="search">
+          <button type="button" id="btnClick"><ion-icon name="search-outline"></ion-icon></button>
+        </div>
+      </div>
     </div>
   </section>
-  <section class="about">
-    
+  <section class="container rapture">
+    <h2 class="text-center">Enjoy a recipe below:</h2>
+    <div class="meal-results row gy-5">
+      
+    </div>
   </section>
 
+  <div class="not-found">
+    <p>We're sorry, but we don't have a recipe that incorporates your ingredient!</p>
+  </div>
+
+  <div class="details">
+  </div>
   <script src="JS/script.js"></script>
 </body>
 </html>
